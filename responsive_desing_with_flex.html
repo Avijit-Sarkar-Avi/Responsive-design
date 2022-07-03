@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design with flex</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+            background-color: #1abc9c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .topnav {
+            background-color: #555;
+            display: flex;
+        }
+        .topnav a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 16px;
+            text-align: center;
+        }
+        .topnav a:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side {
+            flex: 30%;
+            padding: 20px;
+            background-color: #ddd;
+        }
+        .main {
+            flex: 70%;
+            padding: 20px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .fakeimg {
+            background-color: #444;
+            padding: 20px;
+            color: white;
+        }
+        .footer {
+            background-color: darkgray;
+            text-align: center;
+            padding: 20px;
+        }
+        @media screen and (max-width: 700px){
+            .topnav, .row {
+                flex-direction: column;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div style="background-color: yellow; padding: 5px; text-align: center;">
+        <h4>Resize the browser window to see the responsive effect.</h4>
+        </div>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a <b>flexible</b> layout.</p>
+        </div>
+
+        <div class="topnav">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+            </div>
+
+    <div class="row">
+
+
+        <div class="side">
+            <h3>About Me</h3>
+            <h5>Photo of me:</h5>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fakeimg" style="height: 60px;">Image</div><br>
+            <div class="fakeimg" style="height: 60px;">Image</div><br>
+            <div class="fakeimg" style="height: 60px;">Image</div>
+            </div>
+
+
+        <div class="main">
+            <h3>TITLE HEADING</h3>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum 
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco.</p>
+            <h3>TITLE HEADING</h3>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum 
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco.</p>
+            </div>    
+        </div>       
+
+        <div class="footer"><h2>Footer</h2></div>
+</body>
+</html>

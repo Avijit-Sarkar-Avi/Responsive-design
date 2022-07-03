@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive_web_design_1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .link {
+            float: left;
+            width: 20%;
+        }
+        .linka {
+            padding: 8px;
+            margin-top: 7px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .center {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+        .right {
+            float: left;
+            background-color: #e5e5e5;
+            width: 20%;
+            margin-top: 7px;
+            padding: 10px 15px;
+        }
+        @media only screen and (max-width: 800px) {
+            .center {
+                width: 80%;
+                padding: 0;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .link, .center, .right{
+                width: 100%;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div style="background-color: #e5e5e5; padding: 15px;">
+        <h1>Responsive Web Design 1</h1>
+        <h3>Resize the browser window</h3>
+        </div>
+    
+    <div style="overflow: auto;">
+
+        <div class="link">
+            <div class="linka">The Worker</div>
+            <div class="linka">Transport</div>
+            <div class="linka">History</div>
+            <div class="linka">Gallery</div>
+            </div>
+         
+        <div class="center">
+            <h1>The Worker</h1>
+            <p>The walk from Monterosso to Riomaggiore will take you 
+                approximately two hours, give or take an hour depending 
+                on the weather conditions and your physical shape.</p>
+            <img src="terre.jpg" width="100%"> 
+
+            </div> 
+        
+        <div class="right">
+            <h2>What?</h2>
+            <p>Cinque Terre comprises five villages: Monterosso, 
+                Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+            <h2>Where?</h2>
+            <p>On the northwest cost of the Italian Riviera, north of 
+                the city La Spezia.</p>
+            <h2>Price?</h2>
+            <p>The Walk is free!</p>
+            </div>    
+        </div>   
+        
+        <div style="background-color: #e5e5e5; color: #aaa; text-align: center; padding: 10px;
+        margin-top: 8px;">
+            This web page is a part of a demonstration of fluid 
+            web design made by w3schools.com. Resize the browser window 
+            to see the content respond to the resizing.
+            </div>
+
+        
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive design 6</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #ddd;
+            position: fixed;
+            overflow: hidden;
+            height: 100%;
+        }
+        li a {
+            text-decoration: none;
+            color: black;
+            padding: 8px 16px;
+            display: block;
+        }
+        li a.active{
+            background-color: #04aa6d;
+            color: white;
+        }
+        /*A new hover */
+        li a:hover:not(.active) {
+            background-color: #bbb;
+            color: tomato;
+        }
+        div {
+            margin-left: 25%;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+        </style>
+
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Content</a></li>
+        <li><a href="#">About</a></li>
+        </ul>
+    <div>
+        <h1>Fixed Full-height Side Nav</h1>
+        <h2>Try to scroll this area, and see how the sidenav sticks to the page</h2>
+        <p>Notice that this div element has a left margin of 25%. 
+            This is because the side navigation is set to 25% width.
+             If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p>Notice that this div element has a left margin of 25%.
+             This is because the side navigation is set to 25% width. 
+             If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p>Some text...</p>     
+        <p>Some text...</p>
+        <p>Some text...</p>
+        <p>Some text...</p>
+        <p>Some text...</p>
+        <p>Some text...</p>  
+        <p>Some text...</p>
+        <p>Some text...</p>
+        <p>Some text...</p>    
+        <p>Some text...</p>
+        <p>Some text...</p>
+        <p>Some text...</p>    
+        <p>Some text...</p>
+        <p>Some text...</p>    
+        <p>Some text...</p>
+        <p>Some text...</p>    
+        <p>Some text...</p>    
+        <p>Some text...</p>
+        <p>Some text...</p>    
+        <p>Some text...</p>
+        <p>Some text...</p>
+        </div>
+</body>
+</html>
